@@ -1,0 +1,23 @@
+* 5.19 (a)
+
+We can see that to prove encoding with Huffman will have a length of $ \sum m{p_i}log{\frac1 p_i}$ is the equivalent to proving that the code length for $ p_i $ element is $ log{\frac1 p_i }$
+
+Huffman encoding has the followign scheme:
+
+>If some character occurs with frequency more than 2/5, then there is quaranteed to be a codeword of length 1.
+
+>If all character occur with frequency less htan 1/3, then there is guanranteed to be no codeword of length 1.
+
+From the above property, we know that element with $ p_i = 1/2 $ must be in the first layer. 
+
+Then we consider the rest of the tree. The same property applies for the subtree and it is obvious that element with $ p_i = 1/4 $ that is in the first layer of the subtree, since $1/4 \div 1/2 = 1/2$.  Thus it is in the $ 2_{nd}$ layer of the original tree.  
+
+Continue this approach and we can see that the element with $ p_i = \frac1 {2^k} $ is in the $k_{th}$ layer of the Huffman tree.
+
+* 5.19 (b)
+
+When $ p_i = \frac1 n$, the entropy is the largest.
+
+When $ p_i = 0 $ or $1$, the entropy is the smallest.
+
+ 
