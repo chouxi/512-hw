@@ -6,7 +6,7 @@ Huffman encoding has the followign scheme:
 
 >If some character occurs with frequency more than 2/5, then there is quaranteed to be a codeword of length 1.
 
->If all character occur with frequency less htan 1/3, then there is guanranteed to be no codeword of length 1.
+>If all character occur with frequency less than 1/3, then there is guanranteed to be no codeword of length 1.
 
 From the above property, we know that element with $ p_i = 1/2 $ must be in the first layer. 
 
