@@ -1,6 +1,13 @@
 <script type="text/javascript"
    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+##HW7A
+###Section II
+Yanhao Wang 175002614
+
+Zheng Qi 174003950
+
+Mohan Xiao 174005865
 ###7.1
 ![image](https://github.com/chouxi/512-hw/raw/master/7_1.png)
 
@@ -33,26 +40,37 @@ In standard form, the linear program is given by
 
 Minimize $z_m$ 
 for 1 to 7 
-$\quad z \geq a * x_i + b * y_i - c $     
-$\quad z \geq -(a * x_i + b * y_i - c) $
-$\quad z_m > z$
-
-
-
+    $$
+        \begin{array}{ll}
+            \quad z &\geq a * x_i + b * y_i - c \\  
+            \quad z &\geq -(a * x_i + b * y_i - c) \\
+            \quad z_m &> z
+        \end{array}
+    $$
 ###7.10
 
 The maxumun flow is 13, the mathing cur is({$ S,C,F $},{$ A,B,D,E,G,T $})
 
 ### 7.12
-$\max x_1 - 2x_3$ 
-$\quad x_1 - x_2 \leq 1$  $(a)$
-$\quad 2x_2 - x_3 \leq 1$     $(b)$
-$\quad x_1,x_2,x_3\geq 0$     $(c)$
+
+$$
+        \begin{array}{ll}
+            \max x_1 - 2x_3
+            \quad x_1 - x_2 &\leq 1\ &(a)\\
+            \quad 2x_2 - x_3 &\leq 1\ &(b)\\
+            \quad x_1,x_2,x_3 &\geq 0\  &(c)\\
+        \end{array}
+    $$
+
 combine $(a)$, $(b)$, we can get:
-$2x_1 - x_3 \leq 3$
-$x_1 - x_3/2 \leq 3/2$
-since $x_3 \geq 0$, 
-$x_1 - 2x_3 \leq x_1 - x_3/2 \leq 3/2$
+$$
+\begin{array}{ll}
+2x_1 - x_3 &\leq 3\\
+x_1 - x_3/2 &\leq 3/2\\
+since\ x_3 \geq 0 \\
+x_1 - 2x_3 &\leq x_1 - x_3/2 \leq 3/2
+\end{array}
+    $$
 Thus, the optimal solution for $x_1 - 2x_3$ is $3/2$, with $x_3 = 0$ when equality. 
 So $(x_1,x_2,x_3) = (3/2,1/2,0)$ is optimal.
 
@@ -70,6 +88,7 @@ Nodes reachable from $S$ are {$A,B$}, nodes reachable from $T$ are {$S,A,B,C,D$}
 ![image](https://github.com/chouxi/512-hw/raw/master/7-17-4.png)
 
 (f) 
+
 1. Run the network flow algorithm and compute the residual graph R.  
 2. Run DFS on the residual graph R starting from node S. The nodes visited are those reachable by S, remember as set I.
 3. Reverse the esidual graph R. 
