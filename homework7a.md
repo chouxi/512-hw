@@ -55,7 +55,7 @@ The maxumun flow is 13, the mathing cur is({$ S,C,F $},{$ A,B,D,E,G,T $})
 
 $$
         \begin{array}{ll}
-            \max x_1 - 2x_3
+            \max\ x_1 - 2x_3\\
             \quad x_1 - x_2 &\leq 1\ &(a)\\
             \quad 2x_2 - x_3 &\leq 1\ &(b)\\
             \quad x_1,x_2,x_3 &\geq 0\  &(c)\\
