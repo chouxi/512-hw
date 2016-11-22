@@ -11,7 +11,8 @@ $\quad \sum{f_{u,v}} - \sum{f_{u,v}} = 0,(w,u)\in E, (e,v)\in E$
 $\forall e\in E:f_e\geq 0$
 
 (c) 
-Since $x_u - x_v \leq l_{uv}\quad for\, all (u,v)\in E$, we can write $x_s - x_t$ as below:
+In the above linear program, every vertex has a constraint. For each vertex $v$, multiply $x_v$ on both side of condtraints. Then add up all |V| equations, we'll get $\sum (x_u - x_v)f_{u,v} = x_s - x_t$. Since $x_u - x_v \leq l_{uv}$, so $\sum (x_u - x_v)f_{u,v} = x_s - x_t \leq \sum{f_el_e}$. Thus it's the dual LP for the above LP.
+Or in another approach, we can write $x_s - x_t$ as below:
 $x_s - x_{p_1} \leq l_{s{p_1}}$
 $x_{p_1} - x_{p_2} \leq l_{{p_1}{p_2}}$
 $x_{p_3} - x_{p_3} \leq l_{{p_2}{p_3}}$
