@@ -93,6 +93,6 @@ The difference is that the example on page 209 is trying to find the shortest pa
 
 (c) Max flow is equal to mimum cut. Every cut is represented by an edge, and all the flows on these edges form the max flow. Since there could be no more than $|E|$ cuts, there will be at most $|E|$ individual flows from s to t that form the max flow.
 
-(d) As proved in (c), if the max flow is the sum of individual flows along at most |E| paths from s to t, the fattest flow assigned must be larger or equal to F/|E|. So let $f_{t+1}$ and f_{t} be the max flow in the residual graph after t and t+1 iterations, we then can have the relationship between them:
+(d) As proved in (c), if the max flow is the sum of individual flows along at most |E| paths from s to t, the fattest flow assigned must be larger or equal to F/|E|. So let $f_{t+1}$ and $f_{t}$ be the max flow in the residual graph after t and t+1 iterations, we then can have the relationship between them:
 $$c_{t+1} \leq c_t- \frac{c_t} {|E|}$$
 And this recurrence relation will take $O(|E|logF)$ 
